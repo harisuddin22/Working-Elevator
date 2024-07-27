@@ -1,0 +1,103 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: end;
+    background-color: #87CEEB; 
+    font-family: Arial, sans-serif;
+}
+
+.building {
+    width: 300px;
+    display: flex;
+    flex-direction: column-reverse;
+    border: 10px solid #777; 
+    background-color: #999; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.floor {
+    height: 150px;
+    border-bottom: 5px solid #777;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to top, #ccc, #fff); 
+}
+
+.window {
+    width: 30px;
+    height: 50px;
+    background: linear-gradient(to right bottom ,white,rgb(148, 248, 255));
+    border: 2px solid #777; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lift-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 5px;
+}
+
+.lift {
+    width: 50px;
+    height: 80px;
+    background-color: #adadad; 
+    border: 2px solid #a0a0a0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 3s ease;
+    /* Add some depth to the elevator */
+    border-radius: 5px;
+    /* Add some elevator-like details */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls {
+    margin-top: 20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.534);
+    padding: 1rem;
+    border-radius: 0.3rem;
+    position: fixed;
+    right: 2rem;
+    bottom: 5rem;
+}
+
+.controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #444; 
+    color: #fff; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    backdrop-filter: blur(5px);
+}
+
+.controls button:hover {
+    background-color: #666;
+}
+
+.road{
+    height: 5rem;
+    width: 100%;
+    background-color: #444;
+}
